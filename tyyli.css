@@ -8,6 +8,7 @@ body {
     background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 nav {text-align: center;
@@ -16,8 +17,16 @@ nav {text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    gap: 40px;
+    padding: 0;
+    gap: 50px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
 }
 nav a {margin: 20px;
      font-size: 30px;
@@ -25,18 +34,36 @@ nav a {margin: 20px;
       text-decoration: none;
       color: white;
       background: color #1e1923;
-      padding: 5px;
-      margin-bottom: 5px;
+      padding: 20px 60px;
+      margin-bottom: 0;
       display: inline-block;
-      width: 8em;
-
+      width: 4em;
+      justify-content: space-between;
+      height: 200px;
 }
 
+
+
+
+.container div {
+    background-color: #1e1923;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-height: 20vh;
+    
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 h1 {margin-left: 175px;
 font-size: 5vw;
 font-family: "Tektur";
 color: white;
+margin: 5rem;
 
 }
