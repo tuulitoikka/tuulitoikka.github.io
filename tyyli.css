@@ -25,11 +25,11 @@ nav {text-align: center;
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+html {
     height: 100%;
 }
-nav a {margin: 30px;
-     font-size: 30px;
+nav a {margin: 40px;
+     font-size: 35px;
       font-family: "sans-serif";
       text-decoration: none;
       color: white;
@@ -44,28 +44,33 @@ nav a {margin: 30px;
 
 .valorantlogo {
     width: 150px;
-    height: auto;
-    padding: 10px;
+    height: 100px;
+    padding: 5px;
 }
 
 
 .container div {
     background-color: #1e1923;
     width: 100%;
-    padding: 0;
+    padding: 0px;
     margin: 0;
-    max-height: 15vh;
+    max-height: 20vh;
     
 }
 
 
 h1 {margin-left: 175px;
-font-size: 5vw;
+font-size: 4vw;
 font-family: "Tektur";
 color: white;
 margin: 4rem;
 height: 100%;
 
-
+}
+.laatikko {
+    width: 90;
+   
+    
+   
 
 }
