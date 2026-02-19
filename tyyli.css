@@ -18,7 +18,7 @@ nav {text-align: center;
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    gap: 50px;
+    gap: 0;
 }
 * {
     margin: 0;
@@ -28,21 +28,25 @@ nav {text-align: center;
 html, body {
     height: 100%;
 }
-nav a {margin: 20px;
+nav a {margin: 30px;
      font-size: 30px;
       font-family: "sans-serif";
       text-decoration: none;
       color: white;
       background: color #1e1923;
-      padding: 20px 60px;
+      padding: 10px 20px;
       margin-bottom: 0;
       display: inline-block;
       width: 4em;
       justify-content: space-between;
-      height: 200px;
+      height: 150px;
 }
 
-
+.valorantlogo {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
 
 
 .container div {
@@ -50,13 +54,8 @@ nav a {margin: 20px;
     width: 100%;
     padding: 0;
     margin: 0;
-    max-height: 20vh;
+    max-height: 15vh;
     
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 
@@ -64,6 +63,9 @@ h1 {margin-left: 175px;
 font-size: 5vw;
 font-family: "Tektur";
 color: white;
-margin: 5rem;
+margin: 4rem;
+height: 100%;
+
+
 
 }
