@@ -67,10 +67,12 @@ margin: 4rem;
 height: 100%;
 
 }
-.laatikko div {
-    width: 60%;
-    margin: auto;
-   max-height: 20vh;
-   padding: 100px;
-    
+.laatikko {
+   display: flex ;
+   justify-content: center;
+align-items: center;
+}
+
+.item-1 {
+    align-self: center;
 }
