@@ -94,3 +94,13 @@ a:hover {
     background-color: #1e1923;
     text-decoration: underline;
 }
+
+.osa1 {width: 30%;
+float:left;}
+.osa2 {width: 30%;
+float:left;}
+
+@media screen and (max-width: 600px){
+    .osa1, .osa2 {width: 100%;
+    clear: both;} 
+}
