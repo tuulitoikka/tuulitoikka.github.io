@@ -7,11 +7,7 @@
  <meta name="description" content="">
  <meta name="keywords" content="ValoHQ, valorant,esports">
  <title>ValoHQ</title>
- <style>
-   a {
-      color: white;
-      text-decoration: none;}
-      </style>
+ 
 
  <link href="tyyli.css" rel="stylesheet">
  </head>
@@ -20,26 +16,56 @@
    <main>
    <div class="container palkki" >
       <div><div>
-      
-   <header class="header">
-    <section class="osa1">
+
+         <header class="header">
+            <div class="left">
+    <img src="Valorant_logo_-_pink_color_version.svg.png" 
+         class="valorantlogo" 
+         alt="valorant logo">
+
+    <h1 class="otsikko">
+      <a href="index.html" class="no-underline">ValoHQ</a>
+    </h1>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="menu">
+    <a href="agentit.html">Agents</a>
+    <a href="kartat.html">Maps</a>
+    <a href="kokemukset.html">Player Experience</a>
+    <a href="esports.html">Esports</a>
+  </nav>
+
+</header>
+    
+
+
+  <!-- 
+,<header class="header">
+      <div class="left">
        <img src="Valorant_logo_-_pink_color_version.svg.png" class="valorantlogo" alt="valorant logo">
     </section>
- <h1 class="keskitys"> <a href="index.html">ValoHQ</a> 
+ <h1 class="otsikko"> <a href="index.html" class="no-underline">ValoHQ</a> 
  </h1>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
      <nav>
     <a href="agentit.html" class="keskelle">Agents</a>
     <a href="kartat.html" class="keskelle">Maps</a>
     <a href="kokemukset.html" class="keskelle">Player Experience</a>
     <a href="esports.html" class="keskelle">Esports</a>
-    
     </nav>
-   </header>
+   </header> -->
    </div>
    <div class="laatikko">
      <div><div>
-     
-    <section class="osa2">
+
     <p>
       Valorant is a multiplayer first-person shooter developed by Riot games, inc and published in 2020. 
       The game revolves around a 5v5 closed map where one team is selected as the defenders and each
@@ -56,9 +82,12 @@
        playable characters in Valorant fall into one of these categories and provide their own utility 
        depending on their class to the team.
     </p>
-    </section>
      </div>
    </main>
  </body> 
- 
+ <script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
 </html>
