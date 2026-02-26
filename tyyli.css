@@ -95,3 +95,37 @@ a:hover {
     text-decoration: underline;
 }
 
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    grid: 25%;
+    max-width: 7%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 5px;
+    vertical-align: middle;
+    width: 100%;
+    
+}
+h2 {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 2.5em;
+    margin: 20px;
+}
+.container div.duelistSLaatikko {
+ color: #1e1923;
+ width: 25%;
+ margin: auto;
+ padding: 8px;
+ height: 50%;
+ max-width: 500px;
+}
