@@ -51,7 +51,7 @@ nav {
     background-color: #1e1923;
 }
 nav a {margin: 15px;
-     font-size: 1.5em;
+     font-size: 1em;
       font-family: "sans-serif";
       text-decoration: none;
       color: white;
@@ -95,7 +95,11 @@ nav a {margin: 15px;
     }
     .hamburger {
     display: block; }
+    p {
+        font-size: 16px;
+        color: lime;
 }   
+}
 
   
 
@@ -276,18 +280,32 @@ h2 {
         flex-wrap: wrap;
     }
 }
-.kokemuslaaatikot {
+
+.kokemuslaatikot {
     display: flex;
+     justify-content: center;
     background-color: #1e1923;
+    gap: 10px;
 }
-.kokemuslaaatikot div {
+.kokemuslaatikot div {
     flex: 1;
     margin: 100px;
     padding: 30px;
     color: white;
-    font-family: "sans-serif";
+ 
+}
+h2 {
+    color: white;
+    font-family:"lexend";
     text-decoration: none;
+    font-size: 2.5em;
+    margin: 20px;
+    align-content: center;
+    justify-content: center;
+}
+.kokemustekstit {
     font-size: 1.5em;
+    font-family: sans-serif;
     text-align: center;
-    justify-content: space-evenly;
+    color: white;
 }
