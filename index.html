@@ -9,7 +9,7 @@
  <title>ValoHQ</title>
  
 
- <link href="tyyli.css" rel="stylesheet">
+ <link href="tyyli.css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  </head>
 
  <body>
@@ -28,10 +28,28 @@
     </h1>
   </div>
 
+ <div class="mobile-container"></div>
+
+ <div class="topnav">
+  <a href="#home" class="active">menu</a>
+  <div id="myLinks">
+    <a href="agentit.html">Agents</a>
+    <a href="kartat.html">Maps</a>
+    <a href="kokemukset.html">Player Experience</a>
+    <a href="esports.html">Esports</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px"></div>
+
+ <!--
   <div class="hamburger" onclick="toggleMenu()">
     ☰
   </div>
-
+-->
   <nav id="menu">
     <a href="agentit.html">Agents</a>
     <a href="kartat.html">Maps</a>
@@ -39,7 +57,7 @@
     <a href="esports.html">Esports</a>
   </nav>
 
-  </header>
+  </header> 
     
 
 
@@ -85,10 +103,15 @@
     </p>
      </div>
    </main>
- </body> 
  <script>
-  function toggleMenu() {
-  document.getElementById("menu").classList.toggle("show");
+ function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
   </script>
+ </body>
   </html>
