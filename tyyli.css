@@ -88,13 +88,58 @@ body {
 }
 
 
-/*
+/* HAMBURGER */
 .hamburger {
-    font-size: 4em;
-    color: white;
-    cursor: pointer;
-    display: none;    
+  width: 30px;
+  height: 3px;
+  background: white;
+  position: relative;
+  cursor: pointer;
+  display: none;
 }
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: white;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #1e1923;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100px;
+    padding: 15px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/*
 nav {
      display: flex;
     justify-content: center;
@@ -128,7 +173,7 @@ nav a {margin: 15px;
   max-width: 1440px;
   border-radius: 10px;
  
-} */s
+} */
 .container div.palkki {
     background-color: #1e1923;
     width: 100%;
@@ -136,25 +181,11 @@ nav a {margin: 15px;
     margin: 0;
     max-width:1000px;
     height:fit-content;
-    
-} 
-  /*
-@media (max-width: 768px) {
- nav {
-     
-        display: none;
-        flex-direction: column;
-        text-align: center;
-    }
-    .hamburger {
-    display: block; }
-    p {
-        font-size: 16px;
-        color: lime;
-}   
 }
+  
 
-  */
+
+  
 
     nav.show {
         display: flex;
