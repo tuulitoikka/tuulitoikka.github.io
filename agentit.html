@@ -18,9 +18,75 @@
       
    <header class="header">
        <img src="Valorant_logo_-_pink_color_version.svg.png" class="valorantlogo" alt="valorant logo">
- <h1 class="keskitys"> ValoHQ </h1>
+ <h1 class="otsikko"> <a href="index.html"> ValoHQ</a> </h1>
+
+ <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
      <nav>
     <a href="agentit.html" class="keskelle">Agents</a>
     <a href="kartat.html" class="keskelle">Maps</a>
     <a href="kokemukset.html" class="keskelle">Player Experience</a>
     <a href="esports.html" class="keskelle">Esports</a>
+     </nav>
+   </header>
+
+   <section class="agent-section">
+    <div class="agent-card">
+        <h2>Duelist</h2>
+        <div class="agent-grid">
+            <img src="jett.jpg">
+            <img src="raze.jpg">
+            <img src="reyna.jpg">
+            <img src="waylay.jpg">
+            <img src="neon.jpg">
+            <img src="phoenix.jpg">
+        </div>
+    </div>
+
+    <div class="agent-card">
+        <h2>Initiator</h2>
+        <div class="agent-grid">
+            <img src="fade.jpg">
+            <img src="skye.jpg">
+            <img src="kayo.jpg">
+            <img src="tejo.jpg">
+            <img src="Sova.jpg">
+            <img src="gekko.jpg">
+            <img src="breach.jpg">
+        </div>
+    </div>
+
+    <div class="agent-card">
+        <h2>Sentinel</h2>
+        <div class="agent-grid">
+            <img src="Chamber.jpg">
+            <img src="Cypher.jpg">
+            <img src="Killjoy.jpg">
+            <img src="Vyse.jpg">
+            <img src="Sage.jpg">
+            <img src="Veto.jpg">
+            <img src="deadlock.jpg">
+        </div>
+    </div>
+
+    <div class="agent-card">
+        <h2>Controller</h2>
+        <div class="agent-grid">
+            <img src="Astra.jpg">
+            <img src="Clove.jpg">
+            <img src="Brimstone.jpg">
+            <img src="Omen.jpg">
+            <img src="Viper.jpg">
+            <img src="Harbor.jpg">
+        </div>
+    </div>
+
+</section>
+</body>
+ <script>
+    function toggleMenu() {
+  document.getElementById("menu").classList.toggle("show");
+    }
+    </script>
+</html>

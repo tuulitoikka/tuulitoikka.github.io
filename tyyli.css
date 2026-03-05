@@ -1,8 +1,207 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lexend:wght@300&family=Tektur:wght@500&display=swap');
 
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.otsikko {
+    text-decoration: none;
+    font-size: 3em;            
+    font-family: "Tektur";
+    color: white;
+}
+
+.header {
+    display: flex;                
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #1e1923;
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+body {
+    background-image: url("Beta\ Key\ Art_VALORANT.jpg");
+    height: 100px;
+    margin: 0;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.valorantlogo {
+    width: 60px;
+    height:auto;
+}
+
+.mobile-container {
+  max-width: 580px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#F24358;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding:20px 22px;
+  
+  text-decoration: none;
+  font-size:1em;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #000000;
+  color: white;
+}
+
+
+/* HAMBURGER 
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background: white;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: white;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* 
+@media (max-width: 768px) {
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #1e1923;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100px;
+    padding: 15px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+   */
+/*
+nav {
+     display: flex;
+    justify-content: center;
+    background-color: #1e1923;
+}
+nav a {margin: 15px;
+     font-size: 1em;
+      font-family: "sans-serif";
+      text-decoration: none;
+      color: white;
+      background: color #1e1923;
+      padding: 10px 20px;
+      margin-bottom: 0;
+      display: inline-block;
+      width: 4em;
+      justify-content: space-between;
+      height: 150px;
+      max-width: auto;
+}
+      */
+      /*
+.container div.laatikko {
+  width: 55%;
+  margin: auto;
+  padding: 15px;
+  text-align: left;  
+  font-size: 30px; 
+  background-color: #1e1923;
+  gap: 15px;
+  height: 100%;
+  max-width: 1440px;
+  border-radius: 10px;
+ 
+} */
+ /*
+.container div.palkki {
+    background-color: #1e1923;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    max-width:1000px;
+    height:fit-content;
+}
+  
+
+
+  
+
+    nav.show {
+        display: flex;
+    }
+   
+@media (min-width: 1024px) {
+    .otsikko {
+        font-size: 5em;
+    }
+    nav a {
+        font-size: 2.5em;
+    }
+}
 body {
     background-image: url("Beta\ Key\ Art_VALORANT.jpg");
     background-repeat: repeat;
@@ -24,11 +223,7 @@ nav {text-align: center;
     margin-bottom: 100px;
     max-width: 100%
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
  p {
    color: white;
    font-family: "sans-serif";
@@ -58,7 +253,6 @@ nav a {margin: 40px;
     max-width: 500px;
 }
 
-
 .container div.palkki {
     background-color: #1e1923;
     width: 100%;
@@ -80,18 +274,126 @@ nav a {margin: 40px;
  
 
 }
-
+.otsikko:hover {
+    text-decoration: none !important;
+}
+.otsikko a {
+    color: white;   
+    text-decoration: none;
+}
+.no-underline {
+    text-decoration: none;
+}
+.otsikko:visited {
+   color: white;    
+}
 
 h1 {margin-left: 175px;
+text-decoration: none;
 font-size: 5em;
 font-family: "Tektur";
 color: white;
 margin: 4rem;
 height: 100%;
-
 }
-a:hover {
+nav a:hover {
     background-color: #1e1923;
     text-decoration: underline;
+
+}
+/*
+* {
+    box-sizing: border-box;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    grid: 25%;
+    max-width: 7%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 5px;
+    vertical-align: middle;
+    width: 100%;
+    
+}
+h2 {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 2.5em;
+    margin: 20px;
+}
+.container div.duelistSLaatikko {
+ color: #1e1923;
+ width: 25%;
+ margin: auto;
+ padding: 8px;
+ height: 50%;
+ max-width: 500px;
+}
+  /* 
+.agent-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    gap: 40px;
+}
+.agent-card {
+    background-color: #1e1923;
+    color: white;
+    width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+.agent-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.agent-grid img {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 1000px) {
+    .agent-section {
+        flex-wrap: wrap;
+    }
+}
+
+.kokemuslaatikot {
+    display: flex;
+     justify-content: center;
+    background-color: #1e1923;
+    gap: 10px;
+}
+.kokemuslaatikot div {
+    flex: 1;
+    margin: 100px;
+    padding: 30px;
+    color: white;
+ 
+}
+h2 {
+    color: white;
+    font-family:"lexend";
+    text-decoration: none;
+    font-size: 2.5em;
+    margin: 20px;
+    align-content: center;
+    justify-content: center;
+}
+.kokemustekstit {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+  */
