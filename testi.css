@@ -1,0 +1,88 @@
+ /* fontti linkki*/
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lexend:wght@300&family=Tektur:wght@500&display=swap');
+
+
+ /* burgeri */
+.topnav {
+  overflow: hidden;
+  background-color: #1e1923;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #1e1923;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+ body { max-width:100%;
+       
+}
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* Taustakuva */
+body {
+    background-image: url("taustakuva.jpg");
+    height: 100px;
+    margin: 0;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+    width: 100%;
+
+}
+/*teksti */
+p {
+   color: white;
+   font-family: "sans-serif";
+   text-decoration: none;
+   font-size: 1em;
+   height: auto;
+   margin: 10px;
+}
+/* Pääotsikko */
+h1 {margin-left: 50px;
+text-decoration: none;
+font-size: 3em;
+font-family: "Tektur";
+color: white;
+margin: 3rem;
+height: 30%;
+}

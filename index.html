@@ -9,7 +9,8 @@
  <title>ValoHQ</title>
  
 
- <link href="tyyli.css" rel="stylesheet">
+ <link href="testi.css" rel="stylesheet">
+ 
  </head>
 
  <body>
@@ -17,7 +18,7 @@
    <div class="container palkki" >
       <div><div>
         </div>
-
+       <!--
         <header class="header">
 
   <div class="left">
@@ -30,25 +31,26 @@
     </h1>
   </div>
 
-  <!-- Hamburger -->
+   Hamburger 
   <div class="hamburger" onclick="toggleMenu()"></div>
 
-  <!-- Navigation -->
+   Navigation 
   <nav id="menu">
     <a href="agentit.html">Agents</a>
     <a href="kartat.html">Maps</a>
     <a href="kokemukset.html">Player Experience</a>
     <a href="esports.html">Esports</a>
   </nav>
-
+ -->
 </header>
 
-        <!--
+        
          <header class="header">
             <div class="left">
-    <img src="Valorant_logo_-_pink_color_version.svg.png" 
+  <!--  <img src="Valorant_logo_-_pink_color_version.svg.png" 
          class="valorantlogo" 
          alt="valorant logo">
+            -->
 
     <h1 class="otsikko">
       <a href="index.html" class="no-underline">ValoHQ</a>
@@ -56,35 +58,35 @@
   </div>
 
  <div class="mobile-container"></div>
- 
+<!--
 <div class="hamburger" onclick="toggleMenu()">
     ☰
   </div>
- <div class="topnav">
-  <a href="#home" class="active">menu</a>
-  <div id="myLinks">
+-->
+ <div class="topnav" id="myTopnav">
     <a href="agentit.html">Agents</a>
     <a href="kartat.html">Maps</a>
     <a href="kokemukset.html">Player Experience</a>
     <a href="esports.html">Esports</a>
-  </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+    <i class="fa fa-bars" style="color: rgb(19, 185, 58);">
+    </i>
   </a>
 </div>
 
 <div style="padding-left:16px"></div>
-
+ 
+<!--
   <nav id="menu">
     <a href="agentit.html">Agents</a>
     <a href="kartat.html">Maps</a>
     <a href="kokemukset.html">Player Experience</a>
     <a href="esports.html">Esports</a>
   </nav>
-
+-->
   </header> 
     
--->
+
 
   <!--
   <header class="header">
@@ -129,20 +131,21 @@
      </div>
    </main>
  <script>
-  /*
+  
  function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
   } else {
-    x.style.display = "block";
+    x.className = "topnav";
   }
 }
-  */
-
+  
+/*
   function toggleMenu() {
   document.getElementById("menu").classList.toggle("show");
 }
+  */
   </script>
  </body>
   </html>
