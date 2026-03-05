@@ -90,7 +90,7 @@ body {
 }
 
 
-/* HAMBURGER 
+HAMBURGER 
 .hamburger {
   width: 30px;
   height: 3px;
@@ -118,7 +118,7 @@ body {
   top: 8px;
 }
 
-/* 
+
 @media (max-width: 768px) {
 
   nav {
@@ -176,7 +176,7 @@ nav a {margin: 15px;
   border-radius: 10px;
  
 } */
- /*
+ 
 .container div.palkki {
     background-color: #1e1923;
     width: 100%;
@@ -301,7 +301,7 @@ nav a:hover {
     text-decoration: underline;
 
 }
-/*
+
 * {
     box-sizing: border-box;
 }
@@ -337,7 +337,7 @@ h2 {
  height: 50%;
  max-width: 500px;
 }
-  /* 
+  
 .agent-section {
     display: flex;
     justify-content: center;
@@ -396,4 +396,4 @@ h2 {
     text-align: center;
     color: white;
 }
-  */
+  
