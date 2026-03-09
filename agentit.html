@@ -1,92 +1,93 @@
 <!DOCTYPE html>
-<html lang="fi">
- <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="author" content="Tuuli ja Veeti">
- <meta name="description" content="">
- <meta name="keywords" content="ValoHQ, valorant,esports">
- <title>ValoHQ</title>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- <link href="tyyli.css" rel="stylesheet">
- </head>
+<link href="testi.css" rel="stylesheet">
+</head>
+<body>
 
- <body>
-   <main>
-   <div class="container palkki" >
-      <div><div>
-      
-   <header class="header">
-       <img src="Valorant_logo_-_pink_color_version.svg.png" class="valorantlogo" alt="valorant logo">
- <h1 class="otsikko"> <a href="index.html"> ValoHQ</a> </h1>
+<div class="topnav" id="myTopnav">
+  <img src="Valorant_logo_-_pink_color_version.svg.png" class="logo" alt="Valorant logo">
+  <a href="index.html">Home</a>
+  <a href="agentit.html">Agents</a>
+  <a href="kartat.html">Maps</a>
+  <a href="kokemukset.html">Player Experience</a>
+  <a href="esports.html">Esports</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div style="padding-left:16px">
+</div>
 
- <div class="hamburger" onclick="toggleMenu()">
-    ☰
-  </div>
-     <nav>
-    <a href="agentit.html" class="keskelle">Agents</a>
-    <a href="kartat.html" class="keskelle">Maps</a>
-    <a href="kokemukset.html" class="keskelle">Player Experience</a>
-    <a href="esports.html" class="keskelle">Esports</a>
-     </nav>
-   </header>
+<h1 class="pääotsikko"> ValoHQ</h1>
+      </h1>
+
+<h1>Agents</h1>
 
    <section class="agent-section">
     <div class="agent-card">
         <h2>Duelist</h2>
         <div class="agent-grid">
-            <img src="jett.jpg">
-            <img src="raze.jpg">
-            <img src="reyna.jpg">
-            <img src="waylay.jpg">
-            <img src="neon.jpg">
-            <img src="phoenix.jpg">
+            <div class="agent-box"><img src="jett.jpg"> Jett</div>
+            <div class="agent-box"><img src="raze.jpg"> Raze</div>
+            <div class="agent-box"><img src="reyna.jpg"> Reyna</div>
+            <div class="agent-box"><img src="waylay.jpg"> Waylay</div>
+            <div class="agent-box"><img src="neon.jpg"> Neon</div>
+            <div class="agent-box"><img src="phoenix.jpg"> Phoenix</div>
         </div>
     </div>
 
     <div class="agent-card">
         <h2>Initiator</h2>
         <div class="agent-grid">
-            <img src="fade.jpg">
-            <img src="skye.jpg">
-            <img src="kayo.jpg">
-            <img src="tejo.jpg">
-            <img src="Sova.jpg">
-            <img src="gekko.jpg">
-            <img src="breach.jpg">
+            <div class="agent-box"><img src="fade.jpg"> Fade</div>
+            <div class="agent-box"><img src="skye.jpg"> Skye</div>
+            <div class="agent-box"><img src="kayo.jpg"> Kayo</div>
+            <div class="agent-box"><img src="tejo.jpg"> Tejo</div>
+            <div class="agent-box"><img src="Sova.jpg"> Sova</div>
+            <div class="agent-box"><img src="gekko.jpg"> Gekko</div>
+            <div class="agent-box"><img src="breach.jpg"> Breach</div>
         </div>
     </div>
 
     <div class="agent-card">
         <h2>Sentinel</h2>
         <div class="agent-grid">
-            <img src="Chamber.jpg">
-            <img src="Cypher.jpg">
-            <img src="Killjoy.jpg">
-            <img src="Vyse.jpg">
-            <img src="Sage.jpg">
-            <img src="Veto.jpg">
-            <img src="deadlock.jpg">
+            <div class="agent-box"><img src="Chamber.jpg"> Chamber</div>
+            <div class="agent-box"><img src="Cypher.jpg"> Cypher</div>
+            <div class="agent-box"><img src="Killjoy.jpg"> Killjoy</div>
+            <div class="agent-box"><img src="Vyse.jpg"> Vyse</div>
+            <div class="agent-box"><img src="Sage.jpg"> Sage</div>
+            <div class="agent-box"><img src="Veto.jpg"> Veto</div>
+            <div class="agent-box"><img src="deadlock.jpg"> Deadlock</div>
         </div>
     </div>
 
     <div class="agent-card">
         <h2>Controller</h2>
         <div class="agent-grid">
-            <img src="Astra.jpg">
-            <img src="Clove.jpg">
-            <img src="Brimstone.jpg">
-            <img src="Omen.jpg">
-            <img src="Viper.jpg">
-            <img src="Harbor.jpg">
+            <div class="agent-box"><img src="Astra.jpg"> Astra</div>
+            <div class="agent-box"><img src="Clove.jpg"> Clove</div>
+            <div class="agent-box"><img src="Brimstone.jpg"> Brimstone</div>
+            <div class="agent-box"><img src="Omen.jpg"> Omen</div>
+            <div class="agent-box"><img src="Viper.jpg"> Viper</div>
+            <div class="agent-box"><img src="Harbor.jpg"> Harbor</div>
         </div>
-    </div>
+    </div></section>
 
-</section>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
- <script>
-    function toggleMenu() {
-  document.getElementById("menu").classList.toggle("show");
-    }
-    </script>
 </html>

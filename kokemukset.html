@@ -1,39 +1,32 @@
 <!DOCTYPE html>
-<html lang="fi">
- <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="author" content="Tuuli ja Veeti">
- <meta name="description" content="">
- <meta name="keywords" content="ValoHQ, valorant,esports">
- <title>ValoHQ</title>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- <link href="tyyli.css" rel="stylesheet">
- </head>
+<link href="testi.css" rel="stylesheet">
+</head>
+<body>
 
- <body>
-   <main>
-   <div class="container palkki" >
-      <div><div>
-      
-   <header class="header">
-       <img src="Valorant_logo_-_pink_color_version.svg.png" class="valorantlogo" alt="valorant logo">
- <h1 class="otsikko"> <a href="index.html"> ValoHQ</a> </h1>
-
- <div class="hamburger" onclick="toggleMenu()">
-    ☰
-  </div>
-     <nav>
-    <a href="agentit.html" class="keskelle">Agents</a>
-    <a href="kartat.html" class="keskelle">Maps</a>
-    <a href="kokemukset.html" class="keskelle">Player Experience</a>
-    <a href="esports.html" class="keskelle">Esports</a>
-     </nav>
-   </header>
+<div class="topnav" id="myTopnav">
+  <img src="Valorant_logo_-_pink_color_version.svg.png" class="logo" alt="Valorant logo">
+  <a href="index.html">Home</a>
+  <a href="agentit.html">Agents</a>
+  <a href="kartat.html">Maps</a>
+  <a href="kokemukset.html">Player Experience</a>
+  <a href="esports.html">Esports</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div style="padding-left:16px">
+</div>
+ <h1 class="pääotsikko"> ValoHQ</h1>
+      </h1>
+<h1>Player Experience</h1>
 
    <div class="kokemuslaatikot">
      <h2>User 1</h2>
-     <div class="kokemustekstit">
      <p>I started playing Valorant during the beta but took a break, returning in Episode 4. 
       My highest peak rank was Ascendant 2 in Episode 8, and since then I’ve consistently 
       stayed in Diamond. I mainly play duelists like Raze and sometimes Jett. Over time,
@@ -42,11 +35,9 @@
         like Valorant because of how it looks, the fact that every agent has different abilities, 
         and I think its shooting mechanics are smoother and more satisfying compared to CS.</p>
      </div>
-     </div>
       
      <div class="kokemuslaatikot">
      <h2>User 2</h2>
-      <div class="kokemustekstit">
      <p>I began playing Valorant during its beta testing stage, yet was not too thrilled with it 
       and stopped playing for an amount of years until returning in 2024 and playing consistently 
       for around a month, since then I’ve played the game on and off but not actively looking at 
@@ -56,11 +47,9 @@
       an fps game compared to the other common games in its genre for me personally since I am not 
       big on shooters.</p>
      </div>
-     </div>
 
       <div class="kokemuslaatikot">
       <h2>User 3</h2>
-      <div class="kokemustekstit">
       <p>I started playing Valorant in December of 2021 because a friend of mine recommended it
          to me. I never really stopped playing it, but I now play it significantly less than I did
           back when I started be-cause my life has changed a lot, and I have different hobbies that 
@@ -75,7 +64,17 @@
             to let it. That's simply a minus-point about gaming, it's male-dominated and that can 
             go the wrong way.</p>
    </div>
-    </div>
 
-  
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
+</body>
+</html>
