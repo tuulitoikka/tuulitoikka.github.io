@@ -393,7 +393,7 @@ h2 {
   .topnav a {
     display: inline-block !important;
     padding: 12px 20px !important;
-    font-size: 15px !important;
+    font-size: 1.75em !important;
   }
 
   .topnav a.icon {
@@ -404,5 +404,37 @@ h2 {
   .topnav .nav-title {
     /* Show title on desktop */
     display: flex;
+  }
+  .laatikko {
+    /* Content boxes on desktop - fixed width */
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    height: 100%;
+    max-height: 1000px;
+  }
+  p{
+    /* Paragraph text on desktop - larger size */
+    font-size: 2.5em;
+  }
+  .kokemuslaatikot {
+    /* Experience boxes on desktop - larger with more padding */
+    margin: 20px auto;
+    padding: 20px 30px;
+    max-width: 800px;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    font-size: 1.75em;
+  }
+  .agent-card {
+    /* Agent cards on desktop - larger with more padding */
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.75em;
   }
 }
