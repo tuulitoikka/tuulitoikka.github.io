@@ -1,33 +1,82 @@
 <!DOCTYPE html>
-<html lang="fi">
- <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="author" content="Tuuli ja Veeti">
- <meta name="description" content="">
- <meta name="keywords" content="ValoHQ, valorant,esports">
- <title>ValoHQ</title>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- <link href="tyyli.css" rel="stylesheet">
- </head>
+<link href="testi.css" rel="stylesheet">
+</head>
+<body>
 
- <body>
-   <main>
-   <div class="container palkki" >
-      <div><div>
-      
-   <header class="header">
-    <section class="osa1">
-       <img src="Valorant_logo_-_pink_color_version.svg.png" class="valorantlogo" alt="valorant logo">
-    </section>
- <h1 class="keskitys"> <a href="index.html">ValoHQ</a> 
- </h1>
-     <nav>
-    <a href="agentit.html" class="keskelle">Agents</a>
-    <a href="kartat.html" class="keskelle">Maps</a>
-    <a href="kokemukset.html" class="keskelle">Player Experience</a>
-    <a href="esports.html" class="keskelle">Esports</a>
-    
-    </nav>
-   </header>
-   </div>
+<div class="topnav" id="myTopnav">
+  <img src="Valorant_logo_-_pink_color_version.svg.png" class="logo" alt="Valorant logo">
+  <h1 class="nav-title">ValoHQ</h1>
+  <a href="index.html">Home</a>
+  <a href="agentit.html">Agents</a>
+  <a href="kartat.html" >Maps</a>
+  <a href="kokemukset.html">Player Experience</a>
+  <a href="esports.html">Esports</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div style="padding-left:16px">
+</div>
+
+
+<h1>Maps</h1>
+
+   <section class="map-section">
+    <div class="map-card">
+        <div class="map-grid">
+            <div class="map-box"><img src="Haven.jpg"> Haven</div>
+            <div class="agent-box"><img src="Haven_kartta.jpg"> Haven minimap</div>
+            <div class="agent-box"><img src="Breeze.jpg"> Breeze</div>
+            <div class="agent-box"><img src="Breeze_kartta.jpg"> Breeze minimap</div>
+            <div class="agent-box"><img src="Icebox.jpg"> Icebox</div>
+            <div class="agent-box"><img src="Icebox_kartta.jpg"> Icebox minimap</div>
+        </div>
+    </div>
+
+    <div class="map-card">
+        <div class="map-grid">
+            <div class="map-box"><img src="Sunset.jpg"> Sunset</div>
+            <div class="map-box"><img src="Sunset_kartta.jpg"> Sunset minimap</div>
+            <div class="map-box"><img src="Bind.jpg"> Bind</div>
+            <div class="map-box"><img src="Bind_kartta.jpg"> Bind minimap</div>
+            <div class="map-box"><img src="Fracture.jpg"> Fracture</div>
+            <div class="map-box"><img src="Fracture_kartta.jpg"> Fracture minimap</div>
+            <div class="map-box"><img src="Lotus.jpg"> Lotus</div>
+            <div class="map-box"><img src="Lotus_kartta.jpg"> Lotus minimap</div>
+        </div>
+    </div>
+
+    <div class="map-card">
+        <div class="map-grid">
+            <div class="map-box"><img src="Pearl.jpg"> Pearl</div>
+            <div class="map-box"><img src="Pearl_kartta.jpg"> Pearl minimap</div>
+            <div class="map-box"><img src="Split.jpg"> Split</div>
+            <div class="map-box"><img src="Split_kartta.jpg"> Split minimap</div>
+            <div class="map-box"><img src="Corrode.jpg"> Corrode</div>
+            <div class="map-box"><img src="Corrode_kartta.jpg"> Corrode minimap</div>
+            <div class="map-box"><img src="Ascent.jpg"> Ascent</div>
+            <div class="map-box"><img src="Ascent_kartta.jpg"> Ascent minimap</div>
+            <div class="map-box"><img src="Abyss.jpg"> Abyss</div>
+            <div class="map-box"><img src="Abyss_kartta.jpg"> Abyss minimap</div>
+        </div>
+    </div>
+    </div></section>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
