@@ -8,6 +8,7 @@
  <meta name="keywords" content="ValoHQ, valorant,esports">
  <title>ValoHQ</title>
 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link href="testi.css" rel="stylesheet">
  </head>
 
@@ -16,20 +17,17 @@
    <div class="container palkki" >
       <div><div>
       
-   <header class="header">
-       <img src="Valorant_logo_-_pink_color_version.svg.png" class="valorantlogo" alt="valorant logo">
- <h1 class="otsikko"> <a href="index.html"> ValoHQ</a> </h1>
-
- <div class="hamburger" onclick="toggleMenu()">
-    ☰
+  <div class="topnav" id="myTopnav">
+    <img src="Valorant_logo_-_pink_color_version.svg.png" class="logo" alt="Valorant logo">
+    <a href="index.html">Home</a>
+    <a href="agentit.html">Agents</a>
+    <a href="kartat.html">Maps</a>
+    <a href="kokemukset.html">Player Experience</a>
+    <a href="esports.html" class="active">Esports</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
-     <nav>
-    <a href="agentit.html" class="keskelle">Agents</a>
-    <a href="kartat.html" class="keskelle">Maps</a>
-    <a href="kokemukset.html" class="keskelle">Player Experience</a>
-    <a href="esports.html" class="keskelle">Esports</a>
-     </nav>
-   </header>
 <div class="kokemuslaatikot">
      <h2>Valorant Champions</h2>
      <div class="kokemustekstit">
@@ -70,4 +68,16 @@ Notable teams: Pape Rex, T1 Esports.
 VCT Chinais the only region of all four major VCT tier 1 regions that has teams that are based in only one country VCT China also consists like the other regions of 3 main splits to the year along with the two masters tournaments that help in qualifying to VCT Champions at the end of the year for the top 4 finishers
 Notable teams: Edward Gaming, BiliBili Gaming.
 </p> 
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 
