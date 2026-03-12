@@ -1,423 +1,438 @@
-/* 
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lexend:wght@300&family=Tektur:wght@500&display=swap');
 
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
-.otsikko {
-    text-decoration: none;
-    font-size: 3em;            
-    font-family: "Tektur";
-    color: white;
-}
-
-.header {
-    display: flex;                
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    background-color: #1e1923;
-}
-.left {
-    display: flex;
-    align-items: center;
-    gap:20px;
-}
-
-body {
-    background-image: url("Beta\ Key\ Art_VALORANT.jpg");
-    height: 100px;
-    margin: 0;
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.valorantlogo {
-    width: 60px;
-    height:auto;
-}
-
-.mobile-container {
-  max-width: 580px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 .topnav {
   overflow: hidden;
-  background-color:#F24358;
-  position: relative;
-}
-
-.topnav #myLinks {
-  display: none;
+  background-color: #1e1923;
+  box-sizing: border-box;
 }
 
 .topnav a {
-  color: white;
-  padding:20px 22px;
-  
-  text-decoration: none;
-  font-size:1em;
+  float: left;
   display: block;
-}
-
-.topnav a.icon {
-  background: rgb(174, 15, 108);
-  color: chocolate !important;
-  display: flex;
-  position: absolute;
-  right: 0;
-  top: 0;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .topnav a:hover {
   background-color: #ddd;
-  color: rgb(255, 252, 252);
+  color: black;
 }
 
-.active {
-  background-color: #0d8a5e;
+.topnav a.active {
+  background-color: #1e1923;
   color: white;
+  width: 80%;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav .logo {
+  float: left;
+  height: 50px;
+  padding: 8px 16px;
+  display: block;
+}
+
+.topnav .nav-title {
+  float: left;
+  color: white;
+  font-family: "Tektur";
+  font-size: 1.5em;
+  margin: 0;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.topnav.responsive .logo {
+
+  float: none;
+}
+
+body {
+  background-image: url("taustakuva.jpg");
+  height: auto;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  max-width: 100%;
+}
+
+p {
+  color: white;
+  font-family: "sans-serif";
+  text-decoration: none;
+  font-size: 1.2em;
+  height: auto;
+  margin: 10px;
+}
+
+h1 {
+  text-decoration: none;
+  font-size: 3em;
+  font-family: "Tektur";
+  color: white;
+  margin: 3rem;
+  height: auto;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 2.5em;
+  margin: 20px;
+}
+
+.laatikko {
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px;
+  text-align: left;
+  background-color: #1e1923;
+  min-height: auto;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.agent-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.agent-card {
+  background-color: #1e1923;
+  color: white;
+  width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.agent-box {
+  background-color: #1e1923;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.agent-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.map-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.map-card {
+  background-color: #1e1923;
+  color: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.map-box {
+  background-color: #2a2530;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.map-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.kokemuslaatikot {
+  background-color: #1e1923;
+  margin: 20px auto;
+  padding: 20px 30px;
+  color: white;
+  max-width: 600px;
+  border-radius: 10px;
+  width: calc(100% - 40px);
+}
+
+.kokemuslaatikot h2 {
+  color: white;
+  font-family: "lexend";
+  text-decoration: none;
+  font-size: 1.8em;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.kokemuslaatikot p {
+  color: white;
+  font-family: "sans-serif";
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+   
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topnav {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topnav .logo {
+    
+    height: 25px;
+    padding: 2px 3px;
+    width: auto;
+    flex-shrink: 0;
+    order: 1;
+  }
+
+  .topnav .nav-title {
+   
+    display: flex;
+    font-size: 1em;
+    padding: 2px 4px;
+    flex-shrink: 0;
+    order: 2;
+  }
+
+  .topnav a {
+    display: none;
+    padding: 4px 4px;
+    font-size: 10px;
+  }
+
   .topnav a.icon {
-    float: right;
+    display: block;
+    padding: 4px 4px;
+    flex-shrink: 0;
+    order: 3;
+  }
+
+  .topnav.responsive {
+    position: relative;
     display: block;
   }
-}
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
-  }
-}
-
-
-
-HAMBURGER 
-.hamburger {
-  width: 30px;
-  height: 3px;
-  background: rgb(7, 157, 57);
-  position: relative;
-  cursor: pointer;
-  display: none;
-}
-
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background: rgb(41, 41, 138);
-  left: 0;
-}
-
-.hamburger::before {
-  top: -8px;
-}
-
-.hamburger::after {
-  top: 8px;
-}
-
-
-@media (max-width: 768px) {
-
-  nav {
-    display: none;
-    flex-direction: column;
-    background-color: #1e1923;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100px;
-    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+    padding: 8px 10px;
   }
 
-  nav.show {
-    display: flex;
-  }
-
-  .hamburger {
+  .topnav.responsive .logo {
     display: block;
   }
-}
-   */
-/*
-nav {
-     display: flex;
-    justify-content: center;
-    background-color: #1e1923;
-}
-nav a {margin: 15px;
-     font-size: 1em;
-      font-family: "sans-serif";
-      text-decoration: none;
-      color: white;
-      background: color #1e1923;
-      padding: 10px 20px;
-      margin-bottom: 0;
-      display: inline-block;
-      width: 4em;
-      justify-content: space-between;
-      height: 150px;
-      max-width: auto;
-}
-      */
-      /*
-.container div.laatikko {
-  width: 55%;
-  margin: auto;
-  padding: 15px;
-  text-align: left;  
-  font-size: 30px; 
-  background-color: #1e1923;
-  gap: 15px;
-  height: 100%;
-  max-width: 1440px;
-  border-radius: 10px;
- 
-} */
- /*
-.container div.palkki {
-    background-color: #1e1923;
-    width: 100%;
-    padding: 0px;
-    margin: 0;
-    max-width:1000px;
-    height:fit-content;
-}
-  
 
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    clear: none;
+  }
 
-  
-
-    nav.show {
-        display: flex;
-    }
-   
-@media (min-width: 1024px) {
-    .otsikko {
-        font-size: 5em;
-    }
-    nav a {
-        font-size: 2.5em;
-    }
-}
-body {
-    background-image: url("Beta\ Key\ Art_VALORANT.jpg");
-    background-repeat: repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    
-}
-
-nav {text-align: center;
-    max-width: 100%;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    gap: 0;
-    background-color: #1e1923;
-    margin-bottom: 100px;
-    max-width: 100%
-}
-
- p {
-   color: white;
-   font-family: "sans-serif";
-   text-decoration: none;
-   font-size: 1.3em;
-   height: auto;
-}
-nav a {margin: 40px;
-     font-size: 2.5em;
-      font-family: "sans-serif";
-      text-decoration: none;
-      color: white;
-      background: color #1e1923;
-      padding: 10px 20px;
-      margin-bottom: 0;
-      display: inline-block;
-      width: 4em;
-      justify-content: space-between;
-      height: 150px;
-      max-width: auto;
-}
-
-.valorantlogo {
-    width: 200px;
-    height: 150px;
-    padding: 5px;
-    max-width: 500px;
-}
-
-.container div.palkki {
-    background-color: #1e1923;
-    width: 100%;
-    padding: 0px;
-    margin: 0;
-    max-width: 1200px;
-    
-}
-.container div.laatikko {
-  width: 75%;
-  margin: auto;
-  padding: 15px;
-  text-align: left;  
-  font-size: 30px; 
-  background-color: #1e1923;
-  height: 100%;
-  max-width: 1200px;
-  border-radius: 10px;
- 
-
-}
-.otsikko:hover {
-    text-decoration: none !important;
-}
-.otsikko a {
-    color: white;   
-    text-decoration: none;
-}
-.no-underline {
-    text-decoration: none;
-}
-.otsikko:visited {
-   color: white;    
-}
-
-h1 {margin-left: 175px;
-text-decoration: none;
-font-size: 5em;
-font-family: "Tektur";
-color: white;
-margin: 4rem;
-height: 100%;
-}
-nav a:hover {
-    background-color: #1e1923;
-    text-decoration: underline;
-
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-.column {
-    grid: 25%;
-    max-width: 7%;
-    padding: 0 4px;
-}
-.column img {
-    margin-top: 5px;
-    vertical-align: middle;
-    width: 100%;
-    
-}
-h2 {
-    color: white;
-    font-family: sans-serif;
-    text-decoration: none;
-    font-size: 2.5em;
-    margin: 20px;
-}
-.container div.duelistSLaatikko {
- color: #1e1923;
- width: 25%;
- margin: auto;
- padding: 8px;
- height: 50%;
- max-width: 500px;
-}
-  
-.agent-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
-    gap: 40px;
-}
-.agent-card {
-    background-color: #1e1923;
-    color: white;
-    width: 500px;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-}
-.agent-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-}
-.agent-grid img {
-    width: 100%;
-    height: auto;
-}
-@media (max-width: 1000px) {
-    .agent-section {
-        flex-wrap: wrap;
-    }
-}
-
-.kokemuslaatikot {
-    display: flex;
-     justify-content: center;
-    background-color: #1e1923;
-    gap: 10px;
-}
-.kokemuslaatikot div {
-    flex: 1;
-    margin: 100px;
-    padding: 30px;
-    color: white;
- 
-}
-h2 {
-    color: white;
-    font-family:"lexend";
-    text-decoration: none;
-    font-size: 2.5em;
-    margin: 20px;
-    align-content: center;
-    justify-content: center;
-}
-.kokemustekstit {
+  h1 {
     font-size: 1.5em;
-    font-family: sans-serif;
-    text-align: center;
-    color: white;
+    margin: 0.5rem;
+    padding: 0 5px;
+  }
+
+  p {
+    font-size: 0.9em;
+    margin: 6px;
+    padding: 0 5px;
+  }
+
+  .laatikko {
+    padding: 20px;
+    width: calc(100% - 16px);
+    margin: 10px auto;
+  }
+
+  .agent-section {
+    padding: 6px 10px;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .agent-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .agent-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+
+  .agent-box {
+    padding: 3px;
+  }
+
+  h2 {
+    font-size: 1.1em;
+    margin: 3px;
+  }
+
+  .kokemuslaatikot {
+    margin: 5px auto;
+    padding: 4px 6px;
+    max-width: 90%;
+    width: calc(100% - 12px);
+    border-radius: 6px;
+  }
+
+  .kokemuslaatikot h2 {
+    font-size: 0.8em;
+    margin: 0 0 3px 0;
+  }
+
+  .kokemuslaatikot p {
+    font-size: 0.7em;
+    line-height: 1.2;
+  }
+
+   .agent-section {
+    padding: 6px 10px;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .map-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .map-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+
+  .map-box {
+    padding: 3px;
+  }
 }
-  
+
+@media (min-width: 601px) {
+  .topnav a {
+    display: inline-block !important;
+    padding: 12px 20px !important;
+    font-size: 1.75em !important;
+  }
+
+  .topnav a.icon {
+    display: none !important;
+  }
+
+  .topnav .nav-title {
+    display: flex;
+  }
+  .laatikko {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    height: 100%;
+    max-height: 1000px;
+  }
+  p{
+    font-size: 2.5em;
+  }
+  .kokemuslaatikot {
+    margin: 20px auto;
+    padding: 20px 30px;
+    max-width: 800px;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    font-size: 1.75em;
+  }
+  .agent-card {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.75em;
+  }
+
+   .map-card {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 5em;
+    font-family:"Cal Sans";
+  }
+}
